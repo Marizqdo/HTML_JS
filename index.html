@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Primera Página Web</title>
+</head>
+<body>
+
+    <!-- HEADER: Título principal de la página con <h1> -->
+    <header>
+       <h1>Diana y Kyubi: los gatos que no me dejan dormir</h1>
+    </header>
+
+    <!-- SECCIÓN: Presentación de los gatos -->
+    <section>
+        <h2>¿Quiénes son Diana y Kyubi?</h2>       
+        <img src="gatitos.webp" alt="Gatitos" class="gatitos" style="max-width:300px;">
+        <p>Diana y Kyubi después de una larga noche de fiesta</p>
+
+        <!-- Lista ordenada -->
+        <ol>
+            <li>Son muy <strong>traviesos</strong></li>
+            <li>Hacen <strong>mucho ruido por las noches</strong> </li>
+            <li>Pero también son  <strong>cariñosos y juguetones</strong></li>
+        </ol>
+
+        <!-- Párrafo utilizando énfasis <strong> y cursiva <em> -->
+        <p><strong>Diana y Kyubi</strong> son mis gatos y, sin duda, mis <em>mascotas favoritas</em>. Aunque durante el día suelen ser 
+        tranquilos, cariñosos y muy juguetones, por las noches se transforman en <strong>pequeños torbellinos</strong>. Corren por la casa,
+        saltan sobre los muebles y hacen <em>mucho ruido</em> justo cuando intento dormir.  
+        A pesar de eso, no puedo enojarme con ellos, porque siempre buscan compañía, se acurrucan conmigo
+        y demuestran su <strong>cariño</strong> de muchas formas. Su personalidad <em>traviesa</em> es parte de lo que los hace tan especiales,
+        y aunque a veces no me dejan dormir, llenan la casa de <strong>alegría y diversión</strong> todos los días.
+        </p>
+    <hr>
+    </section>
+
+    <!-- SECCIÓN: Lista desordenada -->
+    <section>
+        <h2>Cosas que más les gustan</h2>
+        <ul>
+            <li>Jugar de noche</li>
+            <li>Hacer ruido a las 3 a.m.</li>
+            <li>Dormir todo el día</li>
+            <li>Mimos</li>
+        </ul>
+    <hr>
+    </section>
+
+    <!-- SECCIÓN: Enlaces externos utilizando listas desordenadas -->
+    <section>
+        <h2>Enlaces útiles para amantes de los gatos</h2>
+        <ul>
+            <li><a href="https://www.zooplus.es/">Tienda Zooplus</a></li>
+            <li><a href="https://www.youtube.com/shorts/nytrNfepVfU">Ir a Gatitos Graciosos</a></li>
+        </ul>
+    </section>
+<hr>
+
+    <!-- SECCIÓN: Tabla -->
+    <section>
+        <h2>Comparación entre Diana y Kyubi</h2>
+        <table>
+            <!-- Fila de encabezados -->
+            <tr>
+                <th>Gato</th>
+                <th>Personalidad</th>
+                <th>Nivel de ruido</th>
+                <th>Actividad Favorita</th>
+            </tr>
+            <!-- Fila de Diana -->
+            <tr>
+                <td>Diana</td>
+                <td>Cariñosa</td>
+                <td>Medio</td>
+                <td>Jugar y programar</td>
+            </tr>
+            <!-- Fila de Kyubi -->
+            <tr>
+                <td>Kyubi</td>
+                <td>Travieso</td>
+                <td>Alto</td>
+                <td>Dormir por el día <br> y correr por la noche</td>
+            </tr>
+        </table>
+    </section>
+<hr>
+
+    <!-- SECCIÓN: Formulario -->
+    <section>
+        <h2>Cuéntame sobre tu gato</h2>
+
+        <form action="enviado.html" method="post" target="_blank">
+
+            <!-- FIELDSET: Datos generales del gato -->
+            <fieldset>
+                <legend>Datos Gato</legend>
+                <div class="separador">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre"  autocomplete="off">
+                </div>
+                <div class="separador">
+                    <label for="edad">Edad</label>
+                    <input type="text" name="edad"  autocomplete="off">
+                </div>
+                <div class="separador">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" required autocomplete="off">
+                </div>
+            </fieldset>
+
+            <!-- FIELDSET: Encuesta -->
+            <fieldset>
+                <legend>Encuesta</legend>
+                <p>¿Cómo es de travieso tu gato?</p>
+                <label for="p1">1</label><input type="radio" name="puntuacion">
+                <label for="p2">2</label><input type="radio" name="puntuacion">
+                <label for="p3">3</label><input type="radio" name="puntuacion">
+                <label for="p4">4</label><input type="radio" name="puntuacion">
+                <label for="p5">5</label><input type="radio" name="puntuacion">
+
+                <p>¿Cuál es la actividad favorita de tu gato?</p>
+                <label for="blog">Dormir</label><input type="checkbox" name="dormir">
+                <label for="fotos">Jugar</label><input type="checkbox" name="jugar">
+                <label for="fotos">Comer</label><input type="checkbox" name="comer">
+                <label for="musica">Hacer ruido de noche</label><input type="checkbox" name="hacer ruido de noche">
+                <label for="noticias">Programar</label><input type="checkbox" name="programar">
+            </fieldset>
+
+            <!-- FIELDSET: Comentarios del usuario -->
+            <fieldset>
+                <legend>Deja tu comentario</legend>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí lo que quieras sobre tu gato..."></textarea>
+            </fieldset>
+
+            <!-- Botones de envío y reseteo -->
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+
+        </form>
+    </section>
+
+    <!-- FOOTER: información final de la página -->
+    <footer>
+        <p>&copy; 2026 Mar Izquierdo.<br>Mi página de gatos. Diana y Kyubi hacen la vida más divertida.</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
